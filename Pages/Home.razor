@@ -1,12 +1,25 @@
 ﻿@page "/"
+@using portfolio_v2.Components.Home
 @inject ThemeService _ThemeService
 @inject IJSRuntime _JSRuntime
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Denis Ferreira</PageTitle>
 
-<button @onclick='() => _ThemeService.SetTheme("oneDark")' class="bg-amber-300 hover:cursor-pointer">
+@* <button @onclick='() => _ThemeService.SetTheme("oneDark")' class="bg-amber-300 hover:cursor-pointer">
     One Dark
-</button>
+</button> *@
+
+<div class="m-0 p-0">
+
+    <div class="flex flex-col sm:flex-row w-auto h-auto justify-center gap-8 sm:gap-12 
+        mt-2 sm:mt-4 md:mt-8 lg:mt-12 mb-20 sm:mb-6 md:mb-0">
+
+        <Picture />
+
+        <ReadMe />
+
+    </div>
+</div>
 
 @code {
 
