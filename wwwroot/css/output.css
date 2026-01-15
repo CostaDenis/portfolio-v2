@@ -7,8 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
-    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -175,9 +174,6 @@
   .pointer-events-none {
     pointer-events: none;
   }
-  .collapse {
-    visibility: collapse;
-  }
   .invisible {
     visibility: hidden;
   }
@@ -189,6 +185,9 @@
   }
   .relative {
     position: relative;
+  }
+  .static {
+    position: static;
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
@@ -223,8 +222,14 @@
   .z-50 {
     z-index: 50;
   }
+  .m-40 {
+    margin: calc(var(--spacing) * 40);
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
   }
   .mt-auto {
     margin-top: auto;
@@ -265,17 +270,11 @@
   .h-auto {
     height: auto;
   }
-  .h-full {
-    height: 100%;
-  }
   .h-screen {
     height: 100vh;
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
@@ -359,11 +358,14 @@
   .border-b-transparent {
     border-bottom-color: transparent;
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
+  .bg-\(--MenuHamburguer\) {
+    background-color: var(--MenuHamburguer);
   }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
+  .bg-\(--TopMenu\) {
+    background-color: var(--TopMenu);
+  }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -382,9 +384,6 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .ps-3 {
-    padding-inline-start: calc(var(--spacing) * 3);
   }
   .font-sans {
     font-family: var(--font-sans);
@@ -407,6 +406,15 @@
   }
   .whitespace-nowrap {
     white-space: nowrap;
+  }
+  .text-\(--MenuHamburguerText\) {
+    color: var(--MenuHamburguerText);
+  }
+  .text-\(--TextColorMenuTop\) {
+    color: var(--TextColorMenuTop);
+  }
+  .text-\(--TextColorTopMenu\) {
+    color: var(--TextColorTopMenu);
   }
   .text-inherit {
     color: inherit;
@@ -454,10 +462,45 @@
       }
     }
   }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
+  }
   .hover\:rounded-md {
     &:hover {
       @media (hover: hover) {
         border-radius: var(--radius-md);
+      }
+    }
+  }
+  .hover\:bg-\(--MenuHamburguerHover\) {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--MenuHamburguerHover);
+      }
+    }
+  }
+  .hover\:bg-\(--MenuTopHover\) {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--MenuTopHover);
+      }
+    }
+  }
+  .hover\:bg-\(--TopMenuHover\) {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--TopMenuHover);
+      }
+    }
+  }
+  .hover\:text-\(--MenuHamburguerHoverText\) {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--MenuHamburguerHoverText);
       }
     }
   }

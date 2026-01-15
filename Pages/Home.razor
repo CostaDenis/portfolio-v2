@@ -1,3 +1,24 @@
 ﻿@page "/"
+@inject ThemeService _ThemeService
+@inject IJSRuntime _JSRuntime
 
 <PageTitle>Home</PageTitle>
+
+<button @onclick='() => _ThemeService.SetTheme("oneDark")' class="bg-amber-300 hover:cursor-pointer">
+    One Dark
+</button>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ApplyTheme();
+        _ThemeService.OnChange += async () => await ApplyTheme();
+    }
+
+    async Task ApplyTheme()
+    {
+        var theme = Themes.All[_ThemeService.CurrentTheme];
+        await _JSRuntime.InvokeVoidAsync("applyTheme", theme);
+    }
+}
