@@ -1,7 +1,7 @@
-window.ApplyTheme = (theme) => {
+window.applyTheme = (theme) => {
     const root = document.documentElement;
 
     for (const key in theme) {
-        root.style.setProperty(key, theme[key]);
+        root.style.setProperty(`--${key}`, theme[key]);
     }
 };

@@ -355,6 +355,9 @@
   .border-t-transparent {
     border-top-color: transparent;
   }
+  .border-r-\[var\(--TextColorSpanMenu\)\] {
+    border-right-color: var(--TextColorSpanMenu);
+  }
   .border-b-transparent {
     border-bottom-color: transparent;
   }
@@ -363,6 +366,18 @@
   }
   .bg-\(--TopMenu\) {
     background-color: var(--TopMenu);
+  }
+  .bg-\[var\(--SideMenu\)\] {
+    background-color: var(--SideMenu);
+  }
+  .bg-\[var\(--SpanMenu\)\] {
+    background-color: var(--SpanMenu);
+  }
+  .bg-\[var\(--TopMenu\)\] {
+    background-color: var(--TopMenu);
+  }
+  .bg-\[var\(TopMenu\)\] {
+    background-color: var(TopMenu);
   }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
@@ -410,10 +425,13 @@
   .text-\(--MenuHamburguerText\) {
     color: var(--MenuHamburguerText);
   }
-  .text-\(--TextColorMenuTop\) {
-    color: var(--TextColorMenuTop);
-  }
   .text-\(--TextColorTopMenu\) {
+    color: var(--TextColorTopMenu);
+  }
+  .text-\[var\(--TextColorSpanMenu\)\] {
+    color: var(--TextColorSpanMenu);
+  }
+  .text-\[var\(--TextColorTopMenu\)\] {
     color: var(--TextColorTopMenu);
   }
   .text-inherit {
@@ -483,14 +501,14 @@
       }
     }
   }
-  .hover\:bg-\(--MenuTopHover\) {
+  .hover\:bg-\(--TopMenuHover\) {
     &:hover {
       @media (hover: hover) {
-        background-color: var(--MenuTopHover);
+        background-color: var(--TopMenuHover);
       }
     }
   }
-  .hover\:bg-\(--TopMenuHover\) {
+  .hover\:bg-\[var\(--TopMenuHover\)\] {
     &:hover {
       @media (hover: hover) {
         background-color: var(--TopMenuHover);
