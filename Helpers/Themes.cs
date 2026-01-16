@@ -1,4 +1,4 @@
-namespace portfolio_v2;
+namespace portfolio_v2.Helpers;
 
 public static class Themes
 {
@@ -19,6 +19,8 @@ public static class Themes
                 ["SideMenuSelect"] = "#ffffff",
                 ["SpanMenu"] = "#252526",
                 ["TextColorSpanMenu"] = "#b8b8b8",
+                ["BoardColor"] = "#403c3c",
+                ["CardColor"] = "#403c3c",
                 ["TextColor"] = "#d4d4d4",
                 ["ColorSecundary"] = "#499cd6",
                 ["StatusBar"] = "#087ccc",
@@ -47,6 +49,8 @@ public static class Themes
                 ["SideMenuSelect"] = "#d7dae0",
                 ["SpanMenu"] = "#21252b",
                 ["TextColorSpanMenu"] = "#b7b8b8",
+                ["BoardColor"] = "#21252b",
+                ["CardColor"] = "#21252b",
                 ["TextColor"] = "#e06c75",
                 ["ColorSecundary"] = "#c678dd",
                 ["StatusBar"] = "#21252b",
@@ -75,6 +79,8 @@ public static class Themes
                 ["SideMenuSelect"] = "#ffffff",
                 ["SpanMenu"] = "#f3f3f3",
                 ["TextColorSpanMenu"] = "#616161",
+                ["BoardColor"] = "#dddddd",
+                ["CardColor"] = "#dddddd",
                 ["TextColor"] = "#333333",
                 ["ColorSecundary"] = "#0089b3",
                 ["StatusBar"] = "#007acc",
@@ -103,6 +109,8 @@ public static class Themes
                 ["SideMenuSelect"] = "#99d0f7",
                 ["SpanMenu"] = "#ffffff",
                 ["TextColorSpanMenu"] = "#111111",
+                ["BoardColor"] = "#112233",
+                ["CardColor"] = "#112233",
                 ["TextColor"] = "#c792ea",
                 ["ColorSecundary"] = "#0991b6",
                 ["StatusBar"] = "#2f86d2",

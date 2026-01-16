@@ -1,0 +1,14 @@
+<a href="@DeployUrl" target="_blank" rel="noopener noreferrer">
+    <button class="bg-(--ButtonColor) text-(--TextColorButton) font-bold text-sm sm:text-base md:text-lg rounded-lg
+                            px-6 py-3 flex items-center justify-center gap-2 min-w-40 h-12">
+        <img class="h-5 w-auto" src="Projects/buttons/globe.svg" alt="Deploy">
+        Deploy
+    </button>
+</a>
+
+@code {
+
+    [Parameter]
+    [EditorRequired]
+    public string DeployUrl { get; set; }
+}
