@@ -1,4 +1,7 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime _JSRuntime
+@inject ThemeService _ThemeService
+
 <div class="page">
 
     <TopMenu />
@@ -7,9 +10,10 @@
 
         <SideMenu />
 
-        <main>
+        <main class="bg-[var(--bg)] flex-1 w-full fixed pt-10 sm:pt-14 sm:ml-14 z-10 h-screen
+            overflow-y-auto p-4">
 
-            <article class="m-40 mt-20">
+            <article>
                 @Body
             </article>
         </main>
@@ -17,3 +21,18 @@
     </div>
 
 </div>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ApplyTheme();
+        _ThemeService.OnChange += async () => await ApplyTheme();
+    }
+
+    async Task ApplyTheme()
+    {
+        var theme = Themes.All[_ThemeService.CurrentTheme];
+        await _JSRuntime.InvokeVoidAsync("applyTheme", theme);
+    }
+}

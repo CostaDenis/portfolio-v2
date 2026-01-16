@@ -1,0 +1,35 @@
+@inject IJSRuntime _JSRuntime
+@inject ThemeService _ThemeService
+
+<div class="flex justify-center items-center flex-col h-auto w-auto gap-2">
+    <img class="h-32 w-auto" src="@ThemePath">
+    <h3 class="font-sans text-lg sm:text-xl 
+            md:text-2xl lg:text-3xl text-[var(--TextColor)] whitespace-nowrap">
+        @ThemeName</h3>
+    <button
+        class="w-64 sm:w-44 md:w-52 lg:w-60 bg-[var(--ColorSecundary)] hover:bg-white text-white
+                                 hover:text-[var(--ColorSecundary)] duration-500 p-2 rounded-sm font-bold whitespace-nowrap"
+        @onclick="ApplyTheme">Ativar
+        tema</button>
+</div>
+
+@code {
+
+    [EditorRequired]
+    [Parameter]
+    public string ThemePath { get; set; }
+
+    [EditorRequired]
+    [Parameter]
+    public string ThemeName { get; set; }
+
+    [EditorRequired]
+    [Parameter]
+    public string ThemeFunctionName { get; set; }
+
+    async Task ApplyTheme()
+    {
+        var theme = Themes.All[ThemeFunctionName];
+        await _JSRuntime.InvokeVoidAsync("applyTheme", theme);
+    }
+}
