@@ -1,54 +1,60 @@
-<div class="bg-[var(--SideMenu)] fixed top-10 left-0 hidden
+@inject NavigationManager _NavigationManager
+
+<div class="bg-(--SideMenu) fixed top-10 left-0 hidden
          sm:flex sm:h-screen sm:w-14 sm:flex-col sm:items-center z-40">
 
 
-    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group" data-section="home">
-
+    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group" @onclick='() => ChangeSection("home")'
+        data-section="home">
 
         <img id="home" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/home.svg" alt="Início">
         <img id="home" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/homeHover.svg"
             alt="Início">
 
-        <div
-            class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-[var(--TextColorSpanMenu)] whitespace-nowrap bg-[var(--SpanMenu)] rounded-md 
-                        border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        <div class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-(--TextColorSpanMenu)
+             whitespace-nowrap bg-(--SpanMenu) rounded-md border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100
+              transition-opacity duration-300 pointer-events-none">
             Tela inicial
             <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
-                        border-b-transparent border-r-[var(--TextColorSpanMenu)]">
+                        border-b-transparent border-r-(--TextColorSpanMenu)">
             </div>
         </div>
 
     </div>
 
-    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group" data-section="code">
-        <img id="code" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/code.svg"
+    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group"
+        @onclick='() => ChangeSection("projects")' data-section="projects">
+
+        <img id="code" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/project.svg"
             alt="Projetos">
-        <img id="code" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/codeHover.svg"
+        <img id="code" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/projectHover.svg"
             alt="Projetos">
 
-        <div
-            class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-[var(--TextColorSpanMenu)] whitespace-nowrap bg-[var(--SpanMenu)] rounded-md 
-                        border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        <div class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-(--TextColorSpanMenu)
+             whitespace-nowrap bg-(--SpanMenu) rounded-md border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100
+              transition-opacity duration-300 pointer-events-none">
             Projetos
             <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
-                        border-b-transparent border-r-[var(--TextColorSpanMenu)]">
+                        border-b-transparent border-r-(--TextColorSpanMenu)">
             </div>
         </div>
 
     </div>
 
-    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group" data-section="contact">
+    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group"
+        @onclick='() => ChangeSection("contact")' data-section="contact">
+
         <img id="contact" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/contact.svg"
             alt="Contato">
         <img id="contact" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/contactHover.svg"
             alt="Contato">
 
-        <div
-            class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-[var(--TextColorSpanMenu)] whitespace-nowrap bg-[var(--SpanMenu)] rounded-md 
-                        border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        <div class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-(--TextColorSpanMenu)
+             whitespace-nowrap bg-(--SpanMenu) rounded-md border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100
+              transition-opacity duration-300 pointer-events-none">
             Fale comigo
             <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
-                        border-b-transparent border-r-[var(--TextColorSpanMenu)]">
+                        border-b-transparent border-r-(--TextColorSpanMenu)">
             </div>
         </div>
 
@@ -56,7 +62,8 @@
 
     <div class="mt-auto mb-14">
 
-        <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group" data-section="settings">
+        <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group"
+            @onclick='() => ChangeSection("settings")' data-section="settings">
 
             <img id="settings" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/settings.svg"
                 alt="Configurações">
@@ -64,12 +71,12 @@
             <img id="settings" class="menu-image h-auto w-auto hidden group-hover:block"
                 src="imgs/menu/settingsHover.svg" alt="Configurações">
 
-            <div
-                class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-[var(--TextColorSpanMenu)] whitespace-nowrap bg-[var(--SpanMenu)] rounded-md 
-                            border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <div class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-(--TextColorSpanMenu)
+                 whitespace-nowrap bg-(--SpanMenu) rounded-md border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100
+                transition-opacity duration-300 pointer-events-none">
                 Configurações
                 <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
-                        border-b-transparent border-r-[var(--TextColorSpanMenu)]">
+                        border-b-transparent border-r-(--TextColorSpanMenu)">
                 </div>
             </div>
         </div>
@@ -78,3 +85,25 @@
 
 
 </div>
+
+@code {
+
+    protected void ChangeSection(string section)
+    {
+        switch (section)
+        {
+            case "home":
+                _NavigationManager.NavigateTo("/");
+                break;
+            case "projects":
+                _NavigationManager.NavigateTo("/projects");
+                break;
+            case "contact":
+                _NavigationManager.NavigateTo("/contact");
+                break;
+            case "settings":
+                _NavigationManager.NavigateTo("/settings");
+                break;
+        }
+    }
+}

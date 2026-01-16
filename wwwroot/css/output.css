@@ -445,11 +445,17 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 4px;
   }
+  .border-\(--ColorBorderRM\) {
+    border-color: var(--ColorBorderRM);
+  }
   .border-\[var\(--ColorBorderRM\)\] {
     border-color: var(--ColorBorderRM);
   }
   .border-t-transparent {
     border-top-color: transparent;
+  }
+  .border-r-\(--TextColorSpanMenu\) {
+    border-right-color: var(--TextColorSpanMenu);
   }
   .border-r-\[var\(--TextColorSpanMenu\)\] {
     border-right-color: var(--TextColorSpanMenu);
@@ -457,8 +463,23 @@
   .border-b-transparent {
     border-bottom-color: transparent;
   }
+  .bg-\(--ColorSecundary\) {
+    background-color: var(--ColorSecundary);
+  }
   .bg-\(--MenuHamburguer\) {
     background-color: var(--MenuHamburguer);
+  }
+  .bg-\(--SideMenu\) {
+    background-color: var(--SideMenu);
+  }
+  .bg-\(--SpanMenu\) {
+    background-color: var(--SpanMenu);
+  }
+  .bg-\(--TopMenu\) {
+    background-color: var(--TopMenu);
+  }
+  .bg-\(--bg\) {
+    background-color: var(--bg);
   }
   .bg-\[var\(--ColorSecundary\)\] {
     background-color: var(--ColorSecundary);
@@ -565,8 +586,23 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-\(--ColorSecundary\) {
+    color: var(--ColorSecundary);
+  }
+  .text-\(--ColorTextRM\) {
+    color: var(--ColorTextRM);
+  }
   .text-\(--MenuHamburguerText\) {
     color: var(--MenuHamburguerText);
+  }
+  .text-\(--TextColor\) {
+    color: var(--TextColor);
+  }
+  .text-\(--TextColorSpanMenu\) {
+    color: var(--TextColorSpanMenu);
+  }
+  .text-\(--TextColorTopMenu\) {
+    color: var(--TextColorTopMenu);
   }
   .text-\[var\(--ColorSecundary\)\] {
     color: var(--ColorSecundary);
@@ -667,6 +703,13 @@
       }
     }
   }
+  .hover\:bg-\(--TopMenuHover\) {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--TopMenuHover);
+      }
+    }
+  }
   .hover\:bg-\[var\(--TopMenuHover\)\] {
     &:hover {
       @media (hover: hover) {
@@ -678,6 +721,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-\(--ColorSecundary\) {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--ColorSecundary);
       }
     }
   }

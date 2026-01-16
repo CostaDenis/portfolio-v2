@@ -1,30 +1,19 @@
-﻿<div class="bg-[var(--TopMenu)] fixed top-0 left-0 w-full h-10 flex flex-row justify-start items-center z-50"
-    id="menuTop">
+﻿<div class="bg-(--TopMenu) fixed top-0 left-0 w-full h-10 flex flex-row justify-start items-center z-50" id="menuTop">
 
     <span class="flex justify-center items-center">
         <img class="h-4 w-auto px-2" src="imgs/vscode.svg" alt="vscode">
     </span>
 
-
-    @* <button id="menuButton" class="block sm:hidden hover:bg-[var(--TopMenuHover)] hover:rounded-md"
-        aria-controls="menuHamburguer" aria-expanded="false">
-        <img class="h-6 w-auto px-2" src="src/imgs/menu/hamburger.svg" alt="hamburguer">
-    </button> *@
-
     <HamburguerMenu />
 
-    <div class="hidden sm:block text-[var(--TextColorTopMenu)] font-sans text-sm">
-        <button
-            class="hover:bg-[var(--TopMenuHover)] hover:rounded-md text-inherit px-2 py-2 leading-none">File</button>
+    <div class="hidden sm:block text-(--TextColorTopMenu) font-sans text-sm">
+        <button class="hover:bg-(--TopMenuHover) hover:rounded-md text-inherit px-2 py-2 leading-none">File</button>
 
-        <button
-            class="hover:bg-[var(--TopMenuHover)] hover:rounded-md text-inherit px-2 py-2 leading-none">Edit</button>
+        <button class="hover:bg-(--TopMenuHover) hover:rounded-md text-inherit px-2 py-2 leading-none">Edit</button>
 
-        <button
-            class="hover:bg-[var(--TopMenuHover)] hover:rounded-md text-inherit px-2 py-2 leading-none">View</button>
+        <button class="hover:bg-(--TopMenuHover) hover:rounded-md text-inherit px-2 py-2 leading-none">View</button>
 
-        <button
-            class="hover:bg-[var(--TopMenuHover)] hover:rounded-md text-inherit px-2 py-2 leading-none">Help</button>
+        <button class="hover:bg-(--TopMenuHover) hover:rounded-md text-inherit px-2 py-2 leading-none">Help</button>
 
     </div>
 
