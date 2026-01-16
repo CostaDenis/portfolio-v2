@@ -7,22 +7,12 @@
     </h2>
     <img class="max-w-full max-h-full w-auto h-60 mb-2 object-contain" src="@ProjectPath" alt="@ProjectName" />
 
-    @* <div class="grid grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8 mb-2 mt-2 justify-items-center">
-        <img class="w-auto h-8" src="src/imgs/code/stack/dotnet.svg" alt="Dotnet">
-        <img class="w-auto h-8" src="src/imgs/code/stack/csharp.svg" alt="C#">
-        <img class="w-auto h-8" src="src/imgs/code/stack/postgresql.svg" alt="PostgreSQL">
-        <img class="w-auto h-8" src="src/imgs/code/stack/docker.svg" alt="Docker">
-    </div> *@
-
-    @if (ProjectTechs?.Any() == true)
-    {
-        <div class="grid grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8 mb-2 mt-2 justify-items-center">
-            @foreach (var tech in ProjectTechs)
-            {
-                <img class="w-auto h-8" src="@tech.IconPath" alt="@tech.Name" title="@tech.Name" />
-            }
-        </div>
-    }
+    <div class="grid grid-cols-@Techs.Count gap-2 sm:gap-4 md:gap-6 lg:gap-8 mb-2 mt-2 justify-items-center">
+        @foreach (var tech in Techs)
+        {
+            <img class="w-auto h-8" src="@TechMap.Icon(tech)" alt="@tech.ToString()" />
+        }
+    </div>
 
     <h3 class="text-sm sm:text-base md:text-lg lg:text-xl text-(--TextColor) text-pretty mb-2 sm:mb-4">
         @ProjectDescription
@@ -30,7 +20,12 @@
 
     <div class="flex flex-col xl:flex-row justify-center items-center gap-2 mt-2">
 
-        @* botoes *@
+        <GithubButton ProjectUrl="@ProjectUrl" />
+
+        @if (!string.IsNullOrEmpty(DeployUrl))
+        {
+            <DeployButton DeployUrl="@DeployUrl" />
+        }
 
     </div>
 
@@ -51,9 +46,16 @@
 
     [Parameter]
     [EditorRequired]
-    public List<ProjectTech> ProjectTechs { get; set; } = new List<ProjectTech>();
+    public List<ETech> Techs { get; set; } = new List<ETech>();
 
     [Parameter]
     [EditorRequired]
     public string ProjectDescription { get; set; }
+
+    [Parameter]
+    [EditorRequired]
+    public string ProjectUrl { get; set; }
+
+    [Parameter]
+    public string? DeployUrl { get; set; }
 }
