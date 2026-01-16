@@ -1,3 +1,25 @@
 @page "/contact"
 
-<h1>Contact Me</h1>
+<div class="flex flex-col text-lg sm:text-xl md:text-2xl lg:text-3xl
+        gap-2 sm:gap-4 md:gap-6 lg:gap-8">
+
+    <div class="flex flex-row">
+        <h3 class="ml-1 text-(--BracketColor)">{</h3>
+    </div>
+
+    <div class="flex flex-row">
+        <ContactLine Key="linkedin" Url="https://www.linkedin.com/in/ddcf/" Value="Denis Ferreira" />
+        <Comma />
+    </div>
+
+    <div class="flex flex-row">
+        <ContactLine Key="github" Url="https://github.com/CostaDenis" Value="CostaDenis" />
+        <Comma />
+    </div>
+
+    <ContactLine Key="email" Value="deniscosta.contato@gmail.com" />
+
+    <div class="flex flex-row">
+        <h3 class="ml-1 text-(--BracketColor)">}</h3>
+    </div>
+</div>
