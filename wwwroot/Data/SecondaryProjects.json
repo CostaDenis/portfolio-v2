@@ -1,0 +1,26 @@
+[
+    {
+        "name": "VaultTec - Landing Page",
+        "path": "imgs/Projects/VaultTec_LandingPage.svg",
+        "techs": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TailwindCSS"
+        ],
+        "description": "Página de apresentação da empresa fictícia Vault-Tec, inspirada no universo de Fallout.",
+        "url": "https://github.com/CostaDenis/Vault-Tec",
+        "deployUrl": "https://costadenis.github.io/Vault-Tec/"
+    },
+    {
+        "name": "CyberHamburgueria",
+        "path": "imgs/Projects/CyberHamburgueria.svg",
+        "techs": [
+            "DotNet",
+            "VisualBasic",
+            "Access"
+        ],
+        "description": "Sistema desenvolvido em Windows Forms para gerenciar pedidos e vendas de lanchonete.",
+        "url": "https://github.com/CostaDenis/CyberHamburgueria"
+    }
+]

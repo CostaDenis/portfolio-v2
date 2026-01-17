@@ -26,5 +26,9 @@
     {
         "name": "Azure",
         "path": "imgs/Projects/stack/azure.svg"
+    },
+    {
+        "name": "Blazor",
+        "path": "imgs/Projects/stack/blazor.svg"
     }
 ]
