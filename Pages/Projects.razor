@@ -22,44 +22,41 @@
     <MainBoard />
 
     <div class="flex sm:flex justify-center sm:justify-start items-center sm:items-start
-    mt-12 sm:mt-14 md:mt-16">
+    mt-12 sm:mt-14 md:mt-16 mb-8 sm:mb-10">
 
-        <h3 class="font-sans text-3xl md:text-4xl lg:text-5xl text-(--ColorSecundary) block">
+        <h3 class="font-sans text-3xl md:text-4xl lg:text-5xl text-(--ColorSecundary) block
+        t-12 sm:mt-14 md:mt-16 mb-8 sm:mb-10">
             Principais projetos
         </h3>
     </div>
 
-    <div
-        class="w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center mb-20 sm:mb-6 md:mb-0">
+    <div class="w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
+        justify-items-center gap-6 sm:gap-8 lg:gap-10 mb-20 sm:mb-6 md:mb-0">
 
-        <div class="relative w-auto max-w-[80%] mt-6 sm:mt-8">
+        <ProjectCard ProjectName="simplified-picpay" ProjectPath="imgs/Projects/simplified_picpay.svg"
+            Techs="@SimplifiedPicpayTechs"
+            ProjectDescription="API baseada no desafio técnico do PicPay, aprimorada e ampliada."
+            ProjectUrl="https://github.com/CostaDenis/simplified-picpay"
+            DeployUrl="https://simplified-picpay.onrender.com" />
 
-            <ProjectCard ProjectName="simplified-picpay" ProjectPath="imgs/Projects/simplified_picpay.svg"
-                Techs="@SimplifiedPicpayTechs"
-                ProjectDescription="API baseada no desafio técnico do PicPay, aprimorada e ampliada."
-                ProjectUrl="https://github.com/CostaDenis/simplified-picpay"
-                DeployUrl="https://simplified-picpay.onrender.com" />
-
-            <ProjectCard ProjectName="Classpions League" ProjectPath="imgs/Projects/classpionsleague.svg"
-                Techs="@ClasspionsLeagueTechs" ProjectDescription="Aplicação via console que utiliza o Dapper para gerenciar dados baseados no Campeonato Espanhol
+        <ProjectCard ProjectName="Classpions League" ProjectPath="imgs/Projects/ClasspionsLeague.svg"
+            Techs="@ClasspionsLeagueTechs" ProjectDescription="Aplicação via console que utiliza o Dapper para gerenciar dados baseados no Campeonato Espanhol
                     de Futebol." ProjectUrl="https://github.com/CostaDenis/ClasspionsLeague" />
 
-            <ProjectCard ProjectName="TrackMyAssets_API" ProjectPath="imgs/Projects/TrackMyAssets.svg"
-                Techs="@TrackMyAssetsTechs"
-                ProjectDescription="API Rest para gerenciar e registrar movimentações de ativos."
-                ProjectUrl="https://github.com/CostaDenis/TrackMyAssets_API" />
+        <ProjectCard ProjectName="TrackMyAssets_API" ProjectPath="imgs/Projects/TrackMyAssets.svg"
+            Techs="@TrackMyAssetsTechs"
+            ProjectDescription="API Rest para gerenciar e registrar movimentações de ativos."
+            ProjectUrl="https://github.com/CostaDenis/TrackMyAssets_API" />
 
-            <ProjectCard ProjectName="Hardware Store" ProjectPath="imgs/Projects/HardwareStore.svg"
-                Techs="@HardwareStoreTechs" ProjectDescription="Sistema desenvolvido em Windows Forms para o gerenciamento de vendas e estoque desenvolvido para
+        <ProjectCard ProjectName="Hardware Store" ProjectPath="imgs/Projects/HardwareStore.svg"
+            Techs="@HardwareStoreTechs" ProjectDescription="Sistema desenvolvido em Windows Forms para o gerenciamento de vendas e estoque desenvolvido para
                     lojas de informática." ProjectUrl="https://github.com/CostaDenis/Hardware-Store" />
 
-            <ProjectCard ProjectName="calculadora-imc" ProjectPath="imgs/Projects/calculadora-imc.svg"
-                Techs="@CalculadoraImcTechs"
-                ProjectDescription="Apicação Blazor WebAssembly desenvolvida para o cálculo do IMC."
-                ProjectUrl="https://github.com/CostaDenis/calculadora-imc"
-                DeployUrl="https://costadenis.github.io/calculadora-imc/" />
-
-        </div>
+        <ProjectCard ProjectName="calculadora-imc" ProjectPath="imgs/Projects/calculadora-imc.svg"
+            Techs="@CalculadoraImcTechs"
+            ProjectDescription="Apicação Blazor WebAssembly desenvolvida para o cálculo do IMC."
+            ProjectUrl="https://github.com/CostaDenis/calculadora-imc"
+            DeployUrl="https://costadenis.github.io/calculadora-imc/" />
 
     </div>
 
