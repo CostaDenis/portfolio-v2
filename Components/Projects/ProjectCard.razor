@@ -3,28 +3,28 @@
      transition-transform duration-500 hover:scale-105">
 
     <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl text-(--ColorSecundary) font-bold mb-1 sm:mb-2">
-        @ProjectName
+        @Project.Name
     </h2>
-    <img class="max-w-full max-h-full w-auto h-40 mb-2 object-contain" src="@ProjectPath" alt="@ProjectName" />
+    <img class="max-w-full max-h-full w-auto h-40 mb-2 object-contain" src="@Project.Path" alt="@Project.Name" />
 
     <div class="grid grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8 mb-2 mt-2 justify-items-center">
-        @foreach (var tech in Techs)
+        @foreach (var tech in Project.Techs)
         {
             <img class="w-auto h-8" src="@TechMap.Icon(tech)" alt="@tech.ToString()" />
         }
     </div>
 
     <h3 class="text-sm sm:text-base md:text-lg lg:text-xl text-(--TextColor) text-pretty mb-2 sm:mb-4">
-        @ProjectDescription
+        @Project.Description
     </h3>
 
     <div class="flex flex-col xl:flex-row justify-center items-center gap-2 mt-2">
 
-        <GithubButton ProjectUrl="@ProjectUrl" />
+        <GithubButton ProjectUrl="@Project.Url" />
 
-        @if (!string.IsNullOrEmpty(DeployUrl))
+        @if (!string.IsNullOrEmpty(Project.DeployUrl))
         {
-            <DeployButton DeployUrl="@DeployUrl" />
+            <DeployButton DeployUrl="@Project.DeployUrl" />
         }
 
     </div>
@@ -38,24 +38,5 @@
 
     [Parameter]
     [EditorRequired]
-    public string ProjectName { get; set; }
-
-    [Parameter]
-    [EditorRequired]
-    public string ProjectPath { get; set; }
-
-    [Parameter]
-    [EditorRequired]
-    public List<ETech> Techs { get; set; } = new List<ETech>();
-
-    [Parameter]
-    [EditorRequired]
-    public string ProjectDescription { get; set; }
-
-    [Parameter]
-    [EditorRequired]
-    public string ProjectUrl { get; set; }
-
-    [Parameter]
-    public string? DeployUrl { get; set; }
+    public ProjectDTO Project { get; set; }
 }

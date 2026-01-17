@@ -1,4 +1,7 @@
 @page "/projects"
+@using System.Text.Json.Serialization
+@using System.Text.Json
+@inject HttpClient _Http
 
 <body>
 
@@ -33,30 +36,41 @@
     <div class="w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
         justify-items-center gap-6 sm:gap-8 lg:gap-10 mb-20 sm:mb-6 md:mb-0">
 
-        <ProjectCard ProjectName="simplified-picpay" ProjectPath="imgs/Projects/simplified_picpay.svg"
-            Techs="@SimplifiedPicpayTechs"
-            ProjectDescription="API baseada no desafio técnico do PicPay, aprimorada e ampliada."
-            ProjectUrl="https://github.com/CostaDenis/simplified-picpay"
-            DeployUrl="https://simplified-picpay.onrender.com" />
+        @* <ProjectCard Name="simplified-picpay" Path="imgs/Projects/simplified_picpay.svg" Techs="@SimplifiedPicpayTechs"
+            Description="API baseada no desafio técnico do PicPay, aprimorada e ampliada."
+            Url="https://github.com/CostaDenis/simplified-picpay" DeployUrl="https://simplified-picpay.onrender.com" />
 
-        <ProjectCard ProjectName="Classpions League" ProjectPath="imgs/Projects/ClasspionsLeague.svg"
-            Techs="@ClasspionsLeagueTechs" ProjectDescription="Aplicação via console que utiliza o Dapper para gerenciar dados baseados no Campeonato Espanhol
-                    de Futebol." ProjectUrl="https://github.com/CostaDenis/ClasspionsLeague" />
+        <ProjectCard Name="Classpions League" Path="imgs/Projects/ClasspionsLeague.svg" Techs="@ClasspionsLeagueTechs"
+            Description="Aplicação via console que utiliza o Dapper para gerenciar dados baseados no Campeonato Espanhol
+                    de Futebol." Url="https://github.com/CostaDenis/ClasspionsLeague" />
 
-        <ProjectCard ProjectName="TrackMyAssets_API" ProjectPath="imgs/Projects/TrackMyAssets.svg"
-            Techs="@TrackMyAssetsTechs"
-            ProjectDescription="API Rest para gerenciar e registrar movimentações de ativos."
-            ProjectUrl="https://github.com/CostaDenis/TrackMyAssets_API" />
+        <ProjectCard Name="TrackMyAssets_API" Path="imgs/Projects/TrackMyAssets.svg" Techs="@TrackMyAssetsTechs"
+            Description="API Rest para gerenciar e registrar movimentações de ativos."
+            Url="https://github.com/CostaDenis/TrackMyAssets_API" />
 
-        <ProjectCard ProjectName="Hardware Store" ProjectPath="imgs/Projects/HardwareStore.svg"
-            Techs="@HardwareStoreTechs" ProjectDescription="Sistema desenvolvido em Windows Forms para o gerenciamento de vendas e estoque desenvolvido para
-                    lojas de informática." ProjectUrl="https://github.com/CostaDenis/Hardware-Store" />
+        <ProjectCard Name="Hardware Store" Path="imgs/Projects/HardwareStore.svg" Techs="@HardwareStoreTechs"
+            Description="Sistema desenvolvido em Windows Forms para o gerenciamento de vendas e estoque desenvolvido para
+                    lojas de informática." Url="https://github.com/CostaDenis/Hardware-Store" />
 
-        <ProjectCard ProjectName="calculadora-imc" ProjectPath="imgs/Projects/calculadora-imc.svg"
-            Techs="@CalculadoraImcTechs"
-            ProjectDescription="Apicação Blazor WebAssembly desenvolvida para o cálculo do IMC."
-            ProjectUrl="https://github.com/CostaDenis/calculadora-imc"
-            DeployUrl="https://costadenis.github.io/calculadora-imc/" />
+        <ProjectCard Name="calculadora-imc" Path="imgs/Projects/calculadora-imc.svg" Techs="@CalculadoraImcTechs"
+            Description="Apicação Blazor WebAssembly desenvolvida para o cálculo do IMC."
+            Url="https://github.com/CostaDenis/calculadora-imc"
+            DeployUrl="https://costadenis.github.io/calculadora-imc/" /> *@
+
+        @if (MyProjects is null)
+        {
+            <p>Carregando projetos...</p>
+        }
+        else
+        {
+
+            @foreach (var project in MyProjects)
+            {
+
+                <ProjectCard Project="@project" />
+
+            }
+        }
 
     </div>
 
@@ -64,47 +78,21 @@
 
 @code {
 
-    private List<ETech> SimplifiedPicpayTechs = new List<ETech>
-{
-ETech.DotNet,
-ETech.CSharp,
-ETech.EntityFramework,
-ETech.PostgreSQL,
-ETech.Docker
-};
+    private List<ProjectDTO>? MyProjects;
 
-    private List<ETech> ClasspionsLeagueTechs = new List<ETech>
-{
-ETech.DotNet,
-ETech.CSharp,
-ETech.SQL,
-ETech.Docker
-};
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
 
-    private List<ETech> TrackMyAssetsTechs = new List<ETech>
-{
-ETech.DotNet,
-ETech.CSharp,
-ETech.SQL,
-ETech.Docker,
-ETech.Azure
-};
+        options.Converters.Add(new JsonStringEnumConverter());
 
-    private List<ETech> HardwareStoreTechs = new List<ETech>
-{
-ETech.DotNet,
-ETech.CSharp,
-ETech.SQLite
-};
-
-    private List<ETech> CalculadoraImcTechs = new List<ETech>
-{
-ETech.DotNet,
-ETech.CSharp,
-ETech.Blazor,
-ETech.HTML,
-ETech.CSS,
-ETech.JavaScript
-};
+        MyProjects = await _Http.GetFromJsonAsync<List<ProjectDTO>>(
+        "Data/Projects.json",
+        options
+        );
+    }
 
 }

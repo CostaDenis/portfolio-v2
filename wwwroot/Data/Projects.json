@@ -1,0 +1,67 @@
+[
+    {
+        "name": "simplified-picpay",
+        "path": "imgs/Projects/simplified_picpay.svg",
+        "techs": [
+            "DotNet",
+            "CSharp",
+            "EntityFramework",
+            "PostgreSQL",
+            "Docker"
+        ],
+        "description": "API baseada no desafio técnico do PicPay, aprimorada e ampliada.",
+        "url": "https://github.com/CostaDenis/simplified-picpay",
+        "deployUrl": "https://simplified-picpay.onrender.com"
+    },
+    {
+        "name": "Classpions League",
+        "path": "imgs/Projects/ClasspionsLeague.svg",
+        "techs": [
+            "DotNet",
+            "CSharp",
+            "SQL",
+            "Docker"
+        ],
+        "description": "Aplicação via console que utiliza o Dapper para gerenciar dados baseados no Campeonato Espanhol de Futebol.",
+        "url": "https://github.com/CostaDenis/ClasspionsLeague"
+    },
+    {
+        "name": "TrackMyAssets_API",
+        "path": "imgs/Projects/TrackMyAssets.svg",
+        "techs": [
+            "DotNet",
+            "CSharp",
+            "SQL",
+            "Docker",
+            "Azure"
+        ],
+        "description": "API Rest para gerenciar e registrar movimentações de ativos.",
+        "url": "https://github.com/CostaDenis/TrackMyAssets_API"
+    },
+    {
+        "name": "Hardware Store",
+        "path": "imgs/Projects/HardwareStore.svg",
+        "techs": [
+            "DotNet",
+            "CSharp",
+            "SQLite"
+        ],
+        "description": "Sistema desenvolvido em Windows Forms para o gerenciamento de vendas e estoque desenvolvido paralojas de informática.",
+        "url": "https://github.com/CostaDenis/Hardware-Store"
+    },
+    {
+        "name": "calculadora-imc",
+        "path": "imgs/Projects/calculadora-imc.svg",
+        "techs": [
+            "DotNet",
+            "CSharp",
+            "Blazor",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "description": "Apicação Blazor WebAssembly desenvolvida para o cálculo do IMC.",
+        "url": "https://github.com/CostaDenis/calculadora-imc",
+        "deployUrl": "https://costadenis.github.io/calculadora-imc/"
+    }
+]
