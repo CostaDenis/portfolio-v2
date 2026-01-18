@@ -41,7 +41,7 @@ jobs:
         run: dotnet build -c Release --no-restore
 
       - name: Publish .NET
-        run: dotnet publish Imc.csproj -c:Release -o docs --nologo
+        run: dotnet publish portfolio-v2.csproj -c:Release -o docs --nologo
 
       - name: Copy index.html to 404.html
         run: cp docs/wwwroot/index.html docs/wwwroot/404.html
