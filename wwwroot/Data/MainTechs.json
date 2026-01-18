@@ -1,34 +1,34 @@
 [
     {
         "name": ".NET",
-        "path": "imgs/Projects/stack/dotnet.svg"
+        "path": "Imgs/Projects/stack/dotnet.svg"
     },
     {
         "name": "C#",
-        "path": "imgs/Projects/stack/csharp.svg"
+        "path": "Imgs/Projects/stack/csharp.svg"
     },
     {
         "name": "SQL",
-        "path": "imgs/Projects/stack/sql.svg"
+        "path": "Imgs/Projects/stack/sql.svg"
     },
     {
         "name": "PostgreSQL",
-        "path": "imgs/Projects/stack/postgresql.svg"
+        "path": "Imgs/Projects/stack/postgresql.svg"
     },
     {
         "name": "SQLite",
-        "path": "imgs/Projects/stack/sqlite.svg"
+        "path": "Imgs/Projects/stack/sqlite.svg"
     },
     {
         "name": "Docker",
-        "path": "imgs/Projects/stack/docker.svg"
+        "path": "Imgs/Projects/stack/docker.svg"
     },
     {
         "name": "Azure",
-        "path": "imgs/Projects/stack/azure.svg"
+        "path": "Imgs/Projects/stack/azure.svg"
     },
     {
         "name": "Blazor",
-        "path": "imgs/Projects/stack/blazor.svg"
+        "path": "Imgs/Projects/stack/blazor.svg"
     }
 ]

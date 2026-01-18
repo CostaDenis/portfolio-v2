@@ -1,34 +1,34 @@
 [
     {
         "name": "HTML",
-        "path": "imgs/Projects/stack/html5.svg"
+        "path": "Imgs/Projects/stack/html5.svg"
     },
     {
         "name": "CSS",
-        "path": "imgs/Projects/stack/css3.svg"
+        "path": "Imgs/Projects/stack/css3.svg"
     },
     {
         "name": "Tailwind CSS",
-        "path": "imgs/Projects/stack/tailwindcss.svg"
+        "path": "Imgs/Projects/stack/tailwindcss.svg"
     },
     {
         "name": "Javascript",
-        "path": "imgs/Projects/stack/javascript.svg"
+        "path": "Imgs/Projects/stack/javascript.svg"
     },
     {
         "name": "Access",
-        "path": "imgs/Projects/stack/access.svg"
+        "path": "Imgs/Projects/stack/access.svg"
     },
     {
         "name": "Firebase",
-        "path": "imgs/Projects/stack/firebase.svg"
+        "path": "Imgs/Projects/stack/firebase.svg"
     },
     {
         "name": "Visual Basic",
-        "path": "imgs/Projects/stack/vb.svg"
+        "path": "Imgs/Projects/stack/vb.svg"
     },
     {
         "name": "Kotlin",
-        "path": "imgs/Projects/stack/kotlin.svg"
+        "path": "Imgs/Projects/stack/kotlin.svg"
     }
 ]

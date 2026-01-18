@@ -1,7 +1,7 @@
 [
     {
         "name": "simplified-picpay",
-        "path": "imgs/Projects/simplified_picpay.svg",
+        "path": "Imgs/Projects/simplified_picpay.svg",
         "techs": [
             "DotNet",
             "CSharp",
@@ -15,7 +15,7 @@
     },
     {
         "name": "Classpions League",
-        "path": "imgs/Projects/ClasspionsLeague.svg",
+        "path": "Imgs/Projects/ClasspionsLeague.svg",
         "techs": [
             "DotNet",
             "CSharp",
@@ -27,7 +27,7 @@
     },
     {
         "name": "TrackMyAssets_API",
-        "path": "imgs/Projects/TrackMyAssets.svg",
+        "path": "Imgs/Projects/TrackMyAssets.svg",
         "techs": [
             "DotNet",
             "CSharp",
@@ -40,7 +40,7 @@
     },
     {
         "name": "Hardware Store",
-        "path": "imgs/Projects/HardwareStore.svg",
+        "path": "Imgs/Projects/HardwareStore.svg",
         "techs": [
             "DotNet",
             "CSharp",
@@ -51,7 +51,7 @@
     },
     {
         "name": "calculadora-imc",
-        "path": "imgs/Projects/calculadora-imc.svg",
+        "path": "Imgs/Projects/calculadora-imc.svg",
         "techs": [
             "DotNet",
             "CSharp",

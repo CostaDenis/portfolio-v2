@@ -1,7 +1,7 @@
 [
     {
         "name": "VaultTec - Landing Page",
-        "path": "imgs/Projects/VaultTec_LandingPage.svg",
+        "path": "Imgs/Projects/VaultTec_LandingPage.svg",
         "techs": [
             "HTML",
             "CSS",
@@ -14,7 +14,7 @@
     },
     {
         "name": "CyberHamburgueria",
-        "path": "imgs/Projects/CyberHamburgueria.svg",
+        "path": "Imgs/Projects/CyberHamburgueria.svg",
         "techs": [
             "DotNet",
             "VisualBasic",
