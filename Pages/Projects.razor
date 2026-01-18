@@ -119,22 +119,22 @@
         options.Converters.Add(new JsonStringEnumConverter());
 
         MainTechs = await _Http.GetFromJsonAsync<List<TechDTO>>(
-        "Data/MainTechs.json",
+        "data/MainTechs.json",
         options
         );
 
         MainProjects = await _Http.GetFromJsonAsync<List<ProjectDTO>>(
-        "Data/MainProjects.json",
+        "data/MainProjects.json",
         options
         );
 
         SecondaryTechs = await _Http.GetFromJsonAsync<List<TechDTO>>(
-        "Data/SecondaryTechs.json",
+        "data/SecondaryTechs.json",
         options
         );
 
         SecondaryProjects = await _Http.GetFromJsonAsync<List<ProjectDTO>>(
-        "Data/SecondaryProjects.json",
+        "data/SecondaryProjects.json",
         options
         );
     }

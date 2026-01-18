@@ -1,0 +1,34 @@
+[
+    {
+        "name": "HTML",
+        "path": "imgs/projects/stack/html5.svg"
+    },
+    {
+        "name": "CSS",
+        "path": "imgs/projects/stack/css3.svg"
+    },
+    {
+        "name": "Tailwind CSS",
+        "path": "imgs/projects/stack/tailwindcss.svg"
+    },
+    {
+        "name": "Javascript",
+        "path": "imgs/projects/stack/javascript.svg"
+    },
+    {
+        "name": "Access",
+        "path": "imgs/projects/stack/access.svg"
+    },
+    {
+        "name": "Firebase",
+        "path": "imgs/projects/stack/firebase.svg"
+    },
+    {
+        "name": "Visual Basic",
+        "path": "imgs/projects/stack/vb.svg"
+    },
+    {
+        "name": "Kotlin",
+        "path": "imgs/projects/stack/kotlin.svg"
+    }
+]

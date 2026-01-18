@@ -1,0 +1,34 @@
+[
+    {
+        "name": ".NET",
+        "path": "imgs/projects/stack/dotnet.svg"
+    },
+    {
+        "name": "C#",
+        "path": "imgs/projects/stack/csharp.svg"
+    },
+    {
+        "name": "SQL",
+        "path": "imgs/projects/stack/sql.svg"
+    },
+    {
+        "name": "PostgreSQL",
+        "path": "imgs/projects/stack/postgresql.svg"
+    },
+    {
+        "name": "SQLite",
+        "path": "imgs/projects/stack/sqlite.svg"
+    },
+    {
+        "name": "Docker",
+        "path": "imgs/projects/stack/docker.svg"
+    },
+    {
+        "name": "Azure",
+        "path": "imgs/projects/stack/azure.svg"
+    },
+    {
+        "name": "Blazor",
+        "path": "imgs/projects/stack/blazor.svg"
+    }
+]
