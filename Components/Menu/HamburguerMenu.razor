@@ -1,40 +1,37 @@
-<button id="menuButton" class="block sm:hidden hover:bg-(--TopMenuHover) hover:rounded-md"
+<button id="menuButton" class="block sm:hidden hover:bg-[var(--TopMenuHover)] hover:rounded-md"
     aria-controls="menuHamburguer" aria-expanded="false">
-    <img class="h-6 w-auto px-2" src="src/imgs/menu/hamburger.svg" alt="hamburguer">
+    <img class="h-6 w-auto px-2" src="imgs/menu/hamburger.svg" alt="hamburguer">
 </button>
 
 
-<div id="menuHamburguer" class="hidden absolute sm:hidden top-full left-10 rounded-sm bg-(--MenuHamburguer)">
+<div id="menuHamburguer" class="hidden absolute sm:hidden top-full left-10 rounded-sm bg-[var(--MenuHamburguer)]">
 
-    <div class="flex flex-col mt-1 w-48 p-1 justify-start items-start">
+    <div
+        class="flex flex-col mt-1 w-48 p-1 justify-start items-start text-[var(--MenuHamburguerText)] hover:text-[var(--MenuHamburguerHoverText)]">
 
-        <div
-            class="flex flex-row justify-between items-center w-full text-(--MenuHamburguerText)
-                    hover:bg-(--MenuHamburguerHover) hover:text-(--MenuHamburguerHoverText) hover:rounded-md py-1 px-4">
+        <div class="flex flex-row justify-between items-center w-full
+                    hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4">
             <button class="font-sans text-inherit text-sm ml-2 leading-none" onclick="loadPage('home.html')">Tela
                 inicial</button>
             <span class="text-inherit invisible">></span>
         </div>
 
-        <div
-            class="flex flex-row justify-between items-center w-full text-(--MenuHamburguerText)
-                    hover:bg-(--MenuHamburguerHover) hover:text-(--MenuHamburguerHoverText) hover:rounded-md py-1 px-4">
+        <div class="flex flex-row justify-between items-center w-full
+                    hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4">
             <button class="font-sans text-inherit text-sm ml-2 leading-none"
                 onclick="loadPage('code.html')">Projetos</button>
             <span class="text-inherit invisible">></span>
         </div>
 
-        <div
-            class="flex flex-row justify-between items-center w-full text-(--MenuHamburguerText)
-                    hover:bg-(--MenuHamburguerHover) hover:text-(--MenuHamburguerHoverText) hover:rounded-md py-1 px-4">
+        <div class="flex flex-row justify-between items-center w-full
+                    hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4">
             <button class="font-sans text-inherit text-sm ml-2 leading-none" onclick="loadPage('contact.html')">Fale
                 comigo</button>
             <span class="text-inherit invisible">></span>
         </div>
 
-        <div
-            class="flex flex-row justify-between items-center w-full text-(--MenuHamburguerText)
-                    hover:bg-(--MenuHamburguerHover) hover:text-(--MenuHamburguerHoverText) hover:rounded-md py-1 px-4">
+        <div class="flex flex-row justify-between items-center w-full
+                    hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4">
             <button class="font-sans text-inherit text-sm ml-2 leading-none"
                 onclick="loadPage('settings.html')">Configurações</button>
             <span class=" text-inherit invisible">></span>

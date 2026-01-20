@@ -508,23 +508,20 @@
     border-left-style: var(--tw-border-style);
     border-left-width: 4px;
   }
-  .border-\(--ColorBorderRM\) {
-    border-color: var(--ColorBorderRM);
-  }
-  .border-\(--TextColorSpanMenu\) {
-    border-color: var(--TextColorSpanMenu);
+  .border-\[var\(--ColorBorder\)\] {
+    border-color: var(--ColorBorder);
   }
   .border-t-transparent {
     border-top-color: transparent;
   }
-  .border-r-\(--TextColorSpanMenu\) {
-    border-right-color: var(--TextColorSpanMenu);
+  .border-r-\[var\(--ColorBorder\)\] {
+    border-right-color: var(--ColorBorder);
   }
   .border-r-transparent {
     border-right-color: transparent;
   }
-  .border-b-\(--TextColorSpanMenu\) {
-    border-bottom-color: var(--TextColorSpanMenu);
+  .border-b-\[var\(--Span\)\] {
+    border-bottom-color: var(--Span);
   }
   .border-b-transparent {
     border-bottom-color: transparent;
@@ -532,31 +529,34 @@
   .border-l-transparent {
     border-left-color: transparent;
   }
-  .bg-\(--BoardColor\) {
-    background-color: var(--BoardColor);
-  }
-  .bg-\(--ButtonColor\) {
-    background-color: var(--ButtonColor);
-  }
-  .bg-\(--CardColor\) {
-    background-color: var(--CardColor);
-  }
   .bg-\(--ColorSecundary\) {
     background-color: var(--ColorSecundary);
   }
-  .bg-\(--MenuHamburguer\) {
+  .bg-\[var\(--BoardColor\)\] {
+    background-color: var(--BoardColor);
+  }
+  .bg-\[var\(--ButtonColor\)\] {
+    background-color: var(--ButtonColor);
+  }
+  .bg-\[var\(--CardColor\)\] {
+    background-color: var(--CardColor);
+  }
+  .bg-\[var\(--ColorSecundary\)\] {
+    background-color: var(--ColorSecundary);
+  }
+  .bg-\[var\(--MenuHamburguer\)\] {
     background-color: var(--MenuHamburguer);
   }
-  .bg-\(--SideMenu\) {
+  .bg-\[var\(--SideMenu\)\] {
     background-color: var(--SideMenu);
   }
-  .bg-\(--SpanMenu\) {
-    background-color: var(--SpanMenu);
+  .bg-\[var\(--Span\)\] {
+    background-color: var(--Span);
   }
-  .bg-\(--TopMenu\) {
+  .bg-\[var\(--TopMenu\)\] {
     background-color: var(--TopMenu);
   }
-  .bg-\(--bg\) {
+  .bg-\[var\(--bg\)\] {
     background-color: var(--bg);
   }
   .object-contain {
@@ -658,37 +658,40 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
-  .text-\(--BracketColor\) {
-    color: var(--BracketColor);
-  }
-  .text-\(--ColorSecundary\) {
-    color: var(--ColorSecundary);
-  }
-  .text-\(--ColorTextRM\) {
-    color: var(--ColorTextRM);
-  }
-  .text-\(--CommaColor\) {
-    color: var(--CommaColor);
-  }
-  .text-\(--KeyColor\) {
-    color: var(--KeyColor);
-  }
-  .text-\(--MenuHamburguerText\) {
-    color: var(--MenuHamburguerText);
-  }
   .text-\(--TextColor\) {
     color: var(--TextColor);
   }
-  .text-\(--TextColorButton\) {
+  .text-\[var\(--BracketColor\)\] {
+    color: var(--BracketColor);
+  }
+  .text-\[var\(--ColorSecundary\)\] {
+    color: var(--ColorSecundary);
+  }
+  .text-\[var\(--ColorTextRM\)\] {
+    color: var(--ColorTextRM);
+  }
+  .text-\[var\(--CommaColor\)\] {
+    color: var(--CommaColor);
+  }
+  .text-\[var\(--KeyColor\)\] {
+    color: var(--KeyColor);
+  }
+  .text-\[var\(--MenuHamburguerText\)\] {
+    color: var(--MenuHamburguerText);
+  }
+  .text-\[var\(--TextColor\)\] {
+    color: var(--TextColor);
+  }
+  .text-\[var\(--TextColorButton\)\] {
     color: var(--TextColorButton);
   }
-  .text-\(--TextColorSpanMenu\) {
-    color: var(--TextColorSpanMenu);
+  .text-\[var\(--TextColorSpan\)\] {
+    color: var(--TextColorSpan);
   }
-  .text-\(--TextColorTopMenu\) {
+  .text-\[var\(--TextColorTopMenu\)\] {
     color: var(--TextColorTopMenu);
   }
-  .text-\(--ValueColor\) {
+  .text-\[var\(--ValueColor\)\] {
     color: var(--ValueColor);
   }
   .text-inherit {
@@ -781,14 +784,14 @@
       }
     }
   }
-  .hover\:bg-\(--MenuHamburguerHover\) {
+  .hover\:bg-\[var\(--MenuHamburguerHover\)\] {
     &:hover {
       @media (hover: hover) {
         background-color: var(--MenuHamburguerHover);
       }
     }
   }
-  .hover\:bg-\(--TopMenuHover\) {
+  .hover\:bg-\[var\(--TopMenuHover\)\] {
     &:hover {
       @media (hover: hover) {
         background-color: var(--TopMenuHover);
@@ -802,14 +805,14 @@
       }
     }
   }
-  .hover\:text-\(--ColorSecundary\) {
+  .hover\:text-\[var\(--ColorSecundary\)\] {
     &:hover {
       @media (hover: hover) {
         color: var(--ColorSecundary);
       }
     }
   }
-  .hover\:text-\(--MenuHamburguerHoverText\) {
+  .hover\:text-\[var\(--MenuHamburguerHoverText\)\] {
     &:hover {
       @media (hover: hover) {
         color: var(--MenuHamburguerHoverText);
