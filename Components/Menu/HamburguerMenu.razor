@@ -12,36 +12,31 @@
         <div
             class="flex flex-col mt-1 w-48 p-1 justify-start items-start text-[var(--MenuHamburguerText)] hover:text-[var(--MenuHamburguerHoverText)]">
 
-            <div
-                class="flex flex-row justify-between items-center w-full
-                                                                        hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4">
-                <button class="font-sans text-inherit text-sm ml-2 leading-none" @onclick='() => ChangeSection("home")'>Tela
+            <div class="flex flex-row justify-between items-center w-full 
+                            hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4"
+                @onclick='() => ChangeSection("home")'>
+                <button class="font-sans text-inherit text-sm ml-2 leading-none">Tela
                     inicial</button>
                 <span class="text-inherit invisible">></span>
             </div>
 
-            <div
-                class="flex flex-row justify-between items-center w-full
-                                                                        hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4">
-                <button class="font-sans text-inherit text-sm ml-2 leading-none"
-                    @onclick='() => ChangeSection("projects")'>Projetos</button>
+            <div class="flex flex-row justify-between items-center w-full
+                            hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4"
+                @onclick='() => ChangeSection("projects")'>
+                <button class="font-sans text-inherit text-sm ml-2 leading-none">Projetos</button>
                 <span class="text-inherit invisible">></span>
             </div>
 
-            <div
-                class="flex flex-row justify-between items-center w-full
-                                                                        hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4">
-                <button class="font-sans text-inherit text-sm ml-2 leading-none"
-                    @onclick='() => ChangeSection("contact")'>Fale
+            <div class="flex flex-row justify-between items-center w-full
+        hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4" @onclick='() => ChangeSection("contact")'>
+                <button class="font-sans text-inherit text-sm ml-2 leading-none">Fale
                     comigo</button>
                 <span class="text-inherit invisible">></span>
             </div>
 
-            <div
-                class="flex flex-row justify-between items-center w-full
-                                                                        hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4">
-                <button class="font-sans text-inherit text-sm ml-2 leading-none"
-                    @onclick='() => ChangeSection("settings")'>Configurações</button>
+            <div class="flex flex-row justify-between items-center w-full
+    hover:bg-[var(--MenuHamburguerHover)] hover:rounded-md py-1 px-4" @onclick='() => ChangeSection("settings")'>
+                <button class="font-sans text-inherit text-sm ml-2 leading-none">Configurações</button>
                 <span class=" text-inherit invisible">></span>
             </div>
 
