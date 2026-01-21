@@ -20,15 +20,7 @@
         "path": "imgs/projects/stack/access.svg"
     },
     {
-        "name": "Firebase",
-        "path": "imgs/projects/stack/firebase.svg"
-    },
-    {
         "name": "Visual Basic",
         "path": "imgs/projects/stack/vb.svg"
-    },
-    {
-        "name": "Kotlin",
-        "path": "imgs/projects/stack/kotlin.svg"
     }
 ]

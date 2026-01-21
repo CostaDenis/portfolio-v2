@@ -58,13 +58,13 @@
 
     </div>
 
-    <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group" @onclick='() => ChangeSection("contact")'>
+    <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group" @onclick='() => ChangeSection("contacts")'>
 
         <div class="absolute left-0 top-0 h-full w-1
             bg-(--ColorSecundary) rounded-r" hidden="@(!IsActive("contacts"))">
         </div>
 
-        @if (IsActive("contact"))
+        @if (IsActive("contacts"))
         {
             <img class="h-auto w-auto" src="imgs/menu/contactHover.svg" alt="Contatos">
         }

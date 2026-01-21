@@ -8,7 +8,7 @@
 <body>
 
     <div class="flex sm:flex justify-center sm:justify-start items-center sm:items-start
-    mt-2 sm:mt-4">
+    mt-14 sm:mt-12 md:mt-10 lg:mt-8">
 
         <h2 class="font-sans text-4xl md:text-5xl lg:text-6xl text-(--ColorSecundary) block">
             Foco profissional
@@ -17,7 +17,7 @@
     </div>
 
     <div class="flex sm:flex justify-center sm:justify-start items-center sm:items-start
-    mt-4 sm:mt-8">
+    mt-12 sm:mt-10 md:mt-8 lg:mt-6">
 
         <h3 class="font-sans text-3xl md:text-4xl lg:text-5xl text-(--ColorSecundary) block">
             Stack Principal
@@ -30,20 +30,22 @@
     }
     else
     {
-        <Board Techs="@MainTechs" />
+        <div class="mt-12 sm:mt-10 md:mt-8 lg:mt-6">
+            <Board Techs="@MainTechs" />
+        </div>
     }
 
     <div class="flex sm:flex justify-center sm:justify-start items-center sm:items-start
-    mt-12 sm:mt-14 md:mt-16 mb-8 sm:mb-10">
+    mt-12 sm:mt-14 md:mt-16 lg:mt-18">
 
-        <h3 class="font-sans text-3xl md:text-4xl lg:text-5xl text-(--ColorSecundary) block
-        t-12 sm:mt-14 md:mt-16 mb-8 sm:mb-10">
+        <h3 class="font-sans text-3xl md:text-4xl lg:text-5xl text-(--ColorSecundary) block">
             Principais projetos
         </h3>
     </div>
 
     <div class="w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
-        justify-items-center gap-6 sm:gap-8 lg:gap-10 mb-20 sm:mb-6 md:mb-0">
+        justify-items-center gap-6 sm:gap-8 lg:gap-10 mb-20 sm:mb-6 md:mb-0
+        mt-12 sm:mt-10 md:mt-8 lg:mt-6">
 
         @if (MainProjects is null)
         {
@@ -60,7 +62,7 @@
     </div>
 
     <div class="flex sm:flex justify-center sm:justify-start items-center sm:items-start
-    mt-4 sm:mt-8">
+    mt-12 sm:mt-14 md:mt-16 lg:mt-18">
 
         <h3 class="font-sans text-3xl md:text-4xl lg:text-5xl text-(--ColorSecundary) block">
             Stack Complementar
@@ -73,20 +75,22 @@
     }
     else
     {
-        <Board Techs="@SecondaryTechs" />
+        <div class="mt-12 sm:mt-10 md:mt-8 lg:mt-6">
+            <Board Techs="@SecondaryTechs" />
+        </div>
     }
 
     <div class="flex sm:flex justify-center sm:justify-start items-center sm:items-start
-    mt-12 sm:mt-14 md:mt-16 mb-8 sm:mb-10">
+    mt-12 sm:mt-14 md:mt-16 lg:mt-18">
 
-        <h3 class="font-sans text-3xl md:text-4xl lg:text-5xl text-(--ColorSecundary) block
-        t-12 sm:mt-14 md:mt-16 mb-8 sm:mb-10">
-            Principais Complementares
+        <h3 class="font-sans text-3xl md:text-4xl lg:text-5xl text-(--ColorSecundary) block">
+            Projetos Complementares
         </h3>
     </div>
 
     <div class="w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
-        justify-items-center gap-6 sm:gap-8 lg:gap-10 mb-20 sm:mb-6 md:mb-0">
+        justify-items-center gap-6 sm:gap-8 lg:gap-10 mb-20 sm:mb-6 md:mb-0
+        mt-12 sm:mt-10 md:mt-8 lg:mt-6">
 
         @if (SecondaryProjects is null)
         {
