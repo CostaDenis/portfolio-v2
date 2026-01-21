@@ -4,12 +4,21 @@
          sm:flex sm:h-screen sm:w-14 sm:flex-col sm:items-center z-40 text-[var(--TextColorSpan)]">
 
 
-    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group" @onclick='() => ChangeSection("home")'
-        data-section="home">
+    <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group" @onclick='() => ChangeSection("home")'>
 
-        <img id="home" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/home.svg" alt="Início">
-        <img id="home" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/homeHover.svg"
-            alt="Início">
+        <div class="absolute left-0 top-0 h-full w-1
+            bg-[var(--ColorSecundary)] rounded-r" hidden="@(!IsActive("home"))">
+        </div>
+
+        @if (IsActive("home"))
+        {
+            <img class="h-auto w-auto" src="imgs/menu/homeHover.svg" alt="Início">
+        }
+        else
+        {
+            <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/home.svg" alt="Início">
+            <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/homeHover.svg" alt="Início">
+        }
 
         <div class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium
              whitespace-nowrap bg-[var(--Span)] rounded-md border-[0.25px] border-[var(--ColorBorder)] opacity-0 group-hover:opacity-100
@@ -22,13 +31,21 @@
 
     </div>
 
-    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group"
-        @onclick='() => ChangeSection("projects")' data-section="projects">
+    <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group" @onclick='() => ChangeSection("projects")'>
 
-        <img id="code" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/project.svg"
-            alt="Projetos">
-        <img id="code" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/projectHover.svg"
-            alt="Projetos">
+        <div class="absolute left-0 top-0 h-full w-1
+            bg-[var(--ColorSecundary)] rounded-r" hidden="@(!IsActive("projects"))">
+        </div>
+
+        @if (IsActive("projects"))
+        {
+            <img class="h-auto w-auto" src="imgs/menu/projectHover.svg" alt="Projetos">
+        }
+        else
+        {
+            <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/project.svg" alt="Projetos">
+            <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/projectHover.svg" alt="Projetos">
+        }
 
         <div class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium
              whitespace-nowrap bg-[var(--Span)] rounded-md border-[0.25px] border-[var(--ColorBorder)] opacity-0 group-hover:opacity-100
@@ -41,13 +58,21 @@
 
     </div>
 
-    <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group"
-        @onclick='() => ChangeSection("contact")' data-section="contact">
+    <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group" @onclick='() => ChangeSection("contact")'>
 
-        <img id="contact" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/contact.svg"
-            alt="Contato">
-        <img id="contact" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/contactHover.svg"
-            alt="Contato">
+        <div class="absolute left-0 top-0 h-full w-1
+            bg-[var(--ColorSecundary)] rounded-r" hidden="@(!IsActive("contact"))">
+        </div>
+
+        @if (IsActive("contact"))
+        {
+            <img class="h-auto w-auto" src="imgs/menu/contactHover.svg" alt="Contato">
+        }
+        else
+        {
+            <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/contact.svg" alt="Contato">
+            <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/contactHover.svg" alt="Contato">
+        }
 
         <div class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium
              whitespace-nowrap bg-[var(--Span)] rounded-md border-[0.25px] border-[var(--ColorBorder)] opacity-0 group-hover:opacity-100
@@ -62,14 +87,22 @@
 
     <div class="mt-auto mb-14">
 
-        <div class="menu-div relative w-auto h-auto px-2 py-2 cursor-pointer group"
-            @onclick='() => ChangeSection("settings")' data-section="settings">
+        <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group" @onclick='() => ChangeSection("settings")'>
 
-            <img id="settings" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/settings.svg"
-                alt="Configurações">
+            <div class="absolute left-0 top-0 h-full w-1
+                bg-[var(--ColorSecundary)] rounded-r" hidden="@(!IsActive("settings"))">
+            </div>
 
-            <img id="settings" class="menu-image h-auto w-auto hidden group-hover:block"
-                src="imgs/menu/settingsHover.svg" alt="Configurações">
+            @if (IsActive("settings"))
+            {
+                <img class="h-auto w-auto" src="imgs/menu/settingsHover.svg" alt="Configurações">
+            }
+            else
+            {
+                <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/settings.svg" alt="Configurações">
+                <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/settingsHover.svg" alt="Configurações">
+            }
+
 
             <div class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium
                  whitespace-nowrap bg-[var(--Span)] rounded-md border-[0.25px] border-[var(--ColorBorder)] opacity-0 group-hover:opacity-100
@@ -88,22 +121,42 @@
 
 @code {
 
+    private string CurrentRoute = "";
+
+    protected override void OnInitialized()
+    {
+        UpdateRoute();
+        _NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        UpdateRoute();
+        StateHasChanged();
+    }
+
+    private void UpdateRoute()
+    {
+        CurrentRoute = _NavigationManager.
+        ToBaseRelativePath(_NavigationManager.Uri).Trim('/').ToLower();
+    }
+
+    private bool IsActive(string route)
+    {
+        if (route == "home")
+            return string.IsNullOrEmpty(CurrentRoute);
+
+        return CurrentRoute.StartsWith(route);
+    }
+
     protected void ChangeSection(string section)
     {
-        switch (section)
-        {
-            case "home":
-                _NavigationManager.NavigateTo("");
-                break;
-            case "projects":
-                _NavigationManager.NavigateTo("projects");
-                break;
-            case "contact":
-                _NavigationManager.NavigateTo("contact");
-                break;
-            case "settings":
-                _NavigationManager.NavigateTo("settings");
-                break;
-        }
+        _NavigationManager.NavigateTo(section == "home" ? "" : section);
     }
+
+    public void Dispose()
+    {
+        _NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+
 }
