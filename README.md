@@ -18,7 +18,7 @@ Ele mantém a inspiração visual na interface do Visual Studio Code, porém com
 
 ## Contexto
 
-O Portfolio v2 é uma evolução direta do meu <a href="">portfólio anterior</a>, que foi desenvolvido utilizando HTML, Tailwind CSS e JavaScript puro.
+O Portfolio v2 é uma evolução direta do meu <a href="https://github.com/CostaDenis/Portfolio">portfólio anterior</a>, que foi desenvolvido utilizando HTML, Tailwind CSS e JavaScript puro.
 
 Embora o projeto anterior cumprisse seu papel, ele acabou se tornando pouco escalável e difícil de manter, especialmente à medida que novas seções e projetos eram adicionados.
 
