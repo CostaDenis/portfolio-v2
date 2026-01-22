@@ -54,7 +54,7 @@ As informações dos projetos, assim como as tecnologias utilizadas em cada um d
 
 No Blazor, esses arquivos são consumidos via HttpClient, convertidos para DTOs, e então utilizados pelos componentes responsáveis pela renderização.
 
-![Código antigo](Docs/Json.png)
+![Código antigo](Docs/projects.png)
 
 ## Pré Requisitos para executar localmente
 
@@ -76,11 +76,11 @@ Instale as dependências do NPM na pasta do projeto:
 
 Inicie o Tailwind CSS:
   ```bash
-    npm run watch
+  npm run watch
   ```
 
 Execute a aplicação:
   ```bash
-    dotnet watch run
+  dotnet watch run
   ```
 

@@ -125,22 +125,22 @@
         options.Converters.Add(new JsonStringEnumConverter());
 
         MainTechs = await _Http.GetFromJsonAsync<List<TechDTO>>(
-        "data/MainTechs.json",
+        AssetUrl.NoCache("data/MainTechs.json"),
         options
         );
 
         MainProjects = await _Http.GetFromJsonAsync<List<ProjectDTO>>(
-        "data/MainProjects.json",
+        AssetUrl.NoCache("data/MainProjects.json"),
         options
         );
 
         SecondaryTechs = await _Http.GetFromJsonAsync<List<TechDTO>>(
-        "data/SecondaryTechs.json",
+        AssetUrl.NoCache("data/SecondaryTechs.json"),
         options
         );
 
         SecondaryProjects = await _Http.GetFromJsonAsync<List<ProjectDTO>>(
-        "data/SecondaryProjects.json",
+        AssetUrl.NoCache("data/SecondaryProjects.json"),
         options
         );
     }
