@@ -9,7 +9,7 @@
             "PostgreSQL",
             "Docker"
         ],
-        "description": "API baseada no desafio técnico do PicPay, aprimorada e ampliada.",
+        "description": "Projeto backend baseado em desafio técnico do PicPay, utilizado como base para aprofundar conceitos de arquitetura, regras de negócio e APIs REST.",
         "url": "https://github.com/CostaDenis/simplified-picpay",
         "deployUrl": "https://simplified-picpay.onrender.com"
     },
@@ -22,7 +22,7 @@
             "SQL",
             "Docker"
         ],
-        "description": "Aplicação via console que utiliza o Dapper para gerenciar dados baseados no Campeonato Espanhol de Futebol.",
+        "description": "Aplicação de console em C# para gerenciar dados de times da primeira divisão espanhola usando operações CRUD com Dapper, com foco em prática de SQL, arquitetura de modelos/repositórios e uso de containers para banco de dados.",
         "url": "https://github.com/CostaDenis/ClasspionsLeague"
     },
     {
@@ -35,7 +35,7 @@
             "Docker",
             "Azure"
         ],
-        "description": "API Rest para gerenciar e registrar movimentações de ativos.",
+        "description": "API REST desenvolvida em .NET 8 para gerenciamento de ativos financeiros, com autenticação JWT, controle de usuários e perfis de acesso, persistência via Entity Framework e SQL Server, arquitetura em camadas e deploy em nuvem. Projeto focado em boas práticas de backend, segurança e regras de negócio.",
         "url": "https://github.com/CostaDenis/TrackMyAssets_API"
     },
     {
@@ -46,7 +46,7 @@
             "CSharp",
             "SQLite"
         ],
-        "description": "Sistema desenvolvido em Windows Forms para o gerenciamento de vendas e estoque desenvolvido paralojas de informática.",
+        "description": "Sistema desktop em C# (Windows Forms) para gestão de loja de informática, com controle de produtos, categorias, estoque, vendas e contas de funcionários, utilizando SQLite e foco em regras de negócio e segurança de dados.",
         "url": "https://github.com/CostaDenis/Hardware-Store"
     },
     {
@@ -60,7 +60,7 @@
             "CSS",
             "JavaScript"
         ],
-        "description": "Apicação Blazor WebAssembly desenvolvida para o cálculo do IMC.",
+        "description": "Aplicação web simples desenvolvida em Blazor WebAssembly (.NET 9) para cálculo de IMC, com classificação automática dos resultados, persistência de dados no LocalStorage e suporte a Progressive Web App (PWA).",
         "url": "https://github.com/CostaDenis/calculadora-imc",
         "deployUrl": "https://costadenis.github.io/calculadora-imc/"
     }

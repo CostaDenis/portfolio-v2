@@ -8,7 +8,7 @@
             "JavaScript",
             "TailwindCSS"
         ],
-        "description": "Página de apresentação da empresa fictícia Vault-Tec, inspirada no universo de Fallout.",
+        "description": "Landing page em HTML e Tailwind CSS com interatividade em JavaScript, inspirado no universo de Fallout.",
         "url": "https://github.com/CostaDenis/Vault-Tec",
         "deployUrl": "https://costadenis.github.io/Vault-Tec/"
     },
@@ -20,7 +20,7 @@
             "VisualBasic",
             "Access"
         ],
-        "description": "Sistema desenvolvido em Windows Forms para gerenciar pedidos e vendas de lanchonete.",
+        "description": "Aplicação desktop desenvolvida em C# para gestão de pedidos e estoque de uma lanchonete, com múltiplos perfis de usuário, controle de comandas e regras de vencimento de itens.",
         "url": "https://github.com/CostaDenis/CyberHamburgueria"
     }
 ]
