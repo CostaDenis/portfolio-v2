@@ -1,21 +1,21 @@
 <div class="flex flex-row ml-2 sm:ml-4 md:ml-6 gap-1">
 
     <h3 class="text-(--KeyColor)">
-        "@Name":
+        "@Contact.Name":
     </h3>
 
-    @if (!string.IsNullOrEmpty(Url))
+    @if (@Contact.Url is not null)
     {
-        <a href="@Url" target="_blank" rel="noopener noreferrer">
+        <a href="@Contact.Url" target="_blank" rel="noopener noreferrer">
             <h3 class="ml-1 text-(--ValueColor) underline" )>
-                "@Value"
+                "@Contact.Value"
             </h3>
         </a>
     }
     else
     {
         <h3 class="ml-1 text-(--ValueColor)" )>
-            "@Value"
+            "@Contact.Value"
         </h3>
     }
 
@@ -25,13 +25,6 @@
 
     [Parameter]
     [EditorRequired]
-    public string Name { get; set; }
-
-    [Parameter]
-    public string? Url { get; set; }
-
-    [Parameter]
-    [EditorRequired]
-    public string Value { get; set; }
+    public ContactDTO Contact { get; set; }
 
 }

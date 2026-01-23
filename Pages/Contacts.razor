@@ -1,27 +1,61 @@
 @page "/contacts"
+@inject HttpClient _Http
+@using System.Text.Json
+@using System.Text.Json.Serialization
 
 <PageTitle>Contatos</PageTitle>
 
 <div class="flex flex-col text-lg sm:text-xl md:text-2xl lg:text-3xl
         gap-2 sm:gap-4 md:gap-6 lg:gap-8">
 
-    <div class="flex flex-row">
-        <h3 class="ml-1 text-(--BracketColor)">{</h3>
-    </div>
+    @if (MyContacts is null)
+    {
+        <p class="text-(--TextColor) text-xl md:text-2xl lg:text-3xl">Carregando contatos...</p>
+    }
+    else
+    {
+        <div class="flex flex-row">
+            <h3 class="ml-1 text-(--BracketColor)">{</h3>
+        </div>
 
-    <div class="flex flex-row">
-        <ContactLine Name="linkedin" Url="https://www.linkedin.com/in/ddcf/" Value="Denis Ferreira" />
-        <Comma />
-    </div>
+        @for (int i = 0; i < MyContacts.Count; i++)
+        {
+            var contact = MyContacts[i];
 
-    <div class="flex flex-row">
-        <ContactLine Name="github" Url="https://github.com/CostaDenis" Value="CostaDenis" />
-        <Comma />
-    </div>
+            <div class="flex flex-row">
+                <ContactLine Contact="@contact" />
 
-    <ContactLine Name="email" Value="deniscosta.contato@gmail.com" />
+                @if (i < MyContacts.Count - 1)
+                {
+                    <Comma />
+                }
+            </div>
+        }
 
-    <div class="flex flex-row">
-        <h3 class="ml-1 text-(--BracketColor)">}</h3>
-    </div>
+        <div class="flex flex-row">
+            <h3 class="ml-1 text-(--BracketColor)">}</h3>
+        </div>
+    }
+
 </div>
+
+@code {
+
+    private List<ContactDTO>? MyContacts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+        options.Converters.Add(new JsonStringEnumConverter());
+
+        MyContacts = await _Http.GetFromJsonAsync<List<ContactDTO>>(
+        AssetUrl.NoCache("data/Contacts.json"),
+        options
+        );
+
+    }
+}
