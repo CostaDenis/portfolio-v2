@@ -43,10 +43,23 @@ Criando novo card de projeto (novo):
 
 ![Código antigo](Docs/novo.png)
 
+## Descrição das seções
+
+### Início
+
+Uma visão geral sobre minha trajetória, foco atual e como venho me desenvolvendo como desenvolvedor backend.
+
+### Projetos
+
+Projetos desenvolvidos para aplicar conceitos de backend, arquitetura, APIs e boas práticas, com código aberto, demonstrações quando disponíveis e tecnologias utilizadas na prática.
+
+### Contatos
+
+Aberto a oportunidades como desenvolvedor backend júnior e projetos freelance.
+
 ## Deploy
 
 O projeto é publicado utilizando GitHub Pages, com build estático do Blazor WebAssembly.
-
 
 ## Observação
 

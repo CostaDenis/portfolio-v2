@@ -13,29 +13,30 @@
             class="flex flex-col mt-1 w-48 p-1 justify-start items-start text-(--MenuHamburguerText) hover:text-(--MenuHamburguerHoverText)">
 
             <div class="flex flex-row justify-between items-center w-full 
-                                                hover:bg-(--MenuHamburguerHover) hover:rounded-md py-1 px-4"
+                                                    hover:bg-(--MenuHamburguerHover) hover:rounded-md py-1 px-4"
                 @onclick='() => ChangeSection("home")'>
-                <button class="font-sans text-inherit text-sm ml-2 leading-none">Tela
-                    inicial</button>
+                <button class="font-sans text-inherit text-sm ml-2 leading-none">
+                    Início
+                </button>
                 <span class="text-inherit invisible">></span>
             </div>
 
             <div class="flex flex-row justify-between items-center w-full
-                                                hover:bg-(--MenuHamburguerHover) hover:rounded-md py-1 px-4"
+                                                    hover:bg-(--MenuHamburguerHover) hover:rounded-md py-1 px-4"
                 @onclick='() => ChangeSection("projects")'>
                 <button class="font-sans text-inherit text-sm ml-2 leading-none">Projetos</button>
                 <span class="text-inherit invisible">></span>
             </div>
 
             <div class="flex flex-row justify-between items-center w-full
-                            hover:bg-(--MenuHamburguerHover) hover:rounded-md py-1 px-4"
+                                hover:bg-(--MenuHamburguerHover) hover:rounded-md py-1 px-4"
                 @onclick='() => ChangeSection("contacts")'>
                 <button class="font-sans text-inherit text-sm ml-2 leading-none">Contatos</button>
                 <span class="text-inherit invisible">></span>
             </div>
 
             <div class="flex flex-row justify-between items-center w-full
-                        hover:bg-(--MenuHamburguerHover) hover:rounded-md py-1 px-4"
+                            hover:bg-(--MenuHamburguerHover) hover:rounded-md py-1 px-4"
                 @onclick='() => ChangeSection("settings")'>
                 <button class="font-sans text-inherit text-sm ml-2 leading-none">Configurações</button>
                 <span class=" text-inherit invisible">></span>
