@@ -63,7 +63,7 @@ O projeto é publicado utilizando GitHub Pages, com build estático do Blazor We
 
 ## Observação
 
-As informações dos projetos, assim como as tecnologias utilizadas em cada um deles, são carregadas dinamicamente a partir de arquivos .json localizados em wwwroot/Data.
+As informações de projetos/tecnologias/contatos são carregadas dinamicamente a partir de arquivos .json localizados em wwwroot/Data.
 
 No Blazor, esses arquivos são consumidos via HttpClient, convertidos para DTOs, e então utilizados pelos componentes responsáveis pela renderização.
 
