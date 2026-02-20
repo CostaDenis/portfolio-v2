@@ -3,7 +3,7 @@
 Este projeto é a evolução do meu portfólio pessoal, agora desenvolvido com Blazor WebAssembly (WASM) e Tailwind CSS.
 Ele mantém a inspiração visual na interface do Visual Studio Code, porém com um foco muito maior em arquitetura, componentização e organização do código.
 
-![Preview](Docs/portfolio.png)
+![Preview](Docs/portfolio.jpg)
 
 
 ## Tecnologias utilizadas
