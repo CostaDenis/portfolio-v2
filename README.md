@@ -3,7 +3,7 @@
 Este projeto é a evolução do meu portfólio pessoal, agora desenvolvido com Blazor WebAssembly (WASM) e Tailwind CSS.
 Ele mantém a inspiração visual na interface do Visual Studio Code, porém com um foco muito maior em arquitetura, componentização e organização do código.
 
-![Preview](Docs/portfolio-v2.png)
+![Preview](Docs/portfolio.png)
 
 
 ## Tecnologias utilizadas
@@ -61,11 +61,11 @@ Aberto a oportunidades como desenvolvedor backend júnior e projetos freelance.
 
 O projeto é publicado utilizando GitHub Pages, com build estático do Blazor WebAssembly.
 
-## Observação
+## Observações
 
-As informações de projetos/tecnologias/contatos são carregadas dinamicamente a partir de arquivos .json localizados em wwwroot/Data.
+- As informações de projetos/tecnologias/contatos são carregadas dinamicamente a partir de arquivos .json localizados em wwwroot/Data.
 
-No Blazor, esses arquivos são consumidos via HttpClient, convertidos para DTOs, e então utilizados pelos componentes responsáveis pela renderização.
+- No Blazor, esses arquivos são consumidos via HttpClient, convertidos para DTOs, e então utilizados pelos componentes responsáveis pela renderização.
 
 ![Código antigo](Docs/projects.png)
 
