@@ -16,10 +16,6 @@
         "path": "imgs/projects/stack/postgresql.svg"
     },
     {
-        "name": "SQLite",
-        "path": "imgs/projects/stack/sqlite.svg"
-    },
-    {
         "name": "Docker",
         "path": "imgs/projects/stack/docker.svg"
     },
@@ -30,5 +26,9 @@
     {
         "name": "Blazor",
         "path": "imgs/projects/stack/blazor.svg"
+    },
+    {
+        "name": "Tailwind CSS",
+        "path": "imgs/projects/stack/tailwindcss.svg"
     }
 ]
