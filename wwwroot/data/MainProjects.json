@@ -6,11 +6,25 @@
             "DotNet",
             "CSharp",
             "Blazor",
+            "TailwindCSS",
             "PostgreSQL",
             "Docker"
         ],
         "description": "Aplicação fullstack para gerenciamento de categorias e produtos, com autenticação JWT e integração entre frontend e backend, focada em arquitetura em camadas.",
         "url": "https://github.com/CostaDenis/dotnet-fullstack-showcase"
+    },
+    {
+        "name": "Dima",
+        "path": "imgs/projects/Dima.svg",
+        "techs": [
+            "DotNet",
+            "CSharp",
+            "Blazor",
+            "SQL",
+            "Docker"
+        ],
+        "description": "Aplicação de controle financeiro desenvolvida em .NET, utilizando Blazor WebAssembly no frontend e Minimal API no backend, com foco em arquitetura em camadas, autenticação, gerenciamento de receitas e despesas e simulação de pagamento via Stripe.",
+        "url": "https://github.com/CostaDenis/dima"
     },
     {
         "name": "simplified-picpay",
@@ -21,7 +35,7 @@
             "PostgreSQL",
             "Docker"
         ],
-        "description": "Projeto backend baseado em desafio técnico do PicPay, utilizado como base para aprofundar conceitos de arquitetura, regras de negócio e APIs REST.",
+        "description": "Projeto backend baseado em desafio técnico do PicPay, utilizado como base para aprofundar conceitos de arquitetura, regras de negócio e API REST.",
         "url": "https://github.com/CostaDenis/simplified-picpay",
         "deployUrl": "https://simplified-picpay.onrender.com"
     },
